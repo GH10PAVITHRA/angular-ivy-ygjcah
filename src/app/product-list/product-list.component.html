@@ -14,4 +14,12 @@
   <button type="button" (click)="share()">Share</button>
   &nbsp;
   <button type="button" (click)="buy()">Buy</button>
+  &nbsp;
+
+  <div style="background-color:red">
+
+  <app-product-alert [productInside]="product"
+  (notify)="onNotify()"></app-product-alert>
+</div>
+&nbsp;
 </div>
