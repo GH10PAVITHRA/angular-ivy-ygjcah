@@ -3,7 +3,9 @@
 <div *ngFor="let product of products">
   <h3>
     <!-- property binding -->
-    <a [title]="product.name + ' details'">
+    <a [title]="product.name + ' details'"
+    [routerLink]="['/products',product.id]"
+    >
       <!-- string interpolation (data binding) -->
       {{ product.name }}
     </a>
